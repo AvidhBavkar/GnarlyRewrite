@@ -29,12 +29,12 @@ public class MotionProfileCommand extends Command {
 	Waypoint[] points;
 
 	// TUNE THESE VALUES
-	public static final double kP = 0.0; //P and V were 0.5
-	public static final double kV = 0.1;
+	public static final double kP = 0.05; //P and V were 0.5
+	public static final double kV = 3.25;
 	public static final double kG = 0;
 
 	public static final double MAX_VEL = 5.5;
-	public static final double MAX_ACL = 6.5;
+	public static final double MAX_ACL = 3;
 	public static final double MAX_JERK = 200;
 
 	public static final double WHEEL_BASE_WIDTH = 2.2;

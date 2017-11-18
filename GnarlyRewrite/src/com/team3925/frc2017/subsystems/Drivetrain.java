@@ -50,7 +50,7 @@ public class Drivetrain extends Subsystem{
 		
 		
 		RobotMap.DrivetrainMap.rightMaster.setInverted  (true );
-		RobotMap.DrivetrainMap.rightMaster.reverseOutput(false);  //TODO: !! This should probably match with the above !!
+		RobotMap.DrivetrainMap.rightMaster.reverseOutput(true);  //TODO: !! This should probably match with the above !!
 		
 		RobotMap.DrivetrainMap.rightSlaveA.setInverted  (false);
 		RobotMap.DrivetrainMap.rightSlaveA.reverseOutput(false);

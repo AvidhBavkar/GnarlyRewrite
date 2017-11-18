@@ -3,6 +3,7 @@ package com.team3925.frc2017;
 import com.team3925.frc2017.commands.DriveManual;
 import com.team3925.frc2017.commands.JaciTesting;
 import com.team3925.frc2017.commands.MotionProfileCommand;
+import com.team3925.frc2017.subsystems.Drivetrain;
 import com.team3925.vision.ChesDroid;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -39,7 +40,7 @@ public class Robot extends IterativeRobot{
 	
 	public void teleopPeriodic(){
 		Scheduler.getInstance().run();
-		System.out.println(Timer.getFPGATimestamp());
+		System.out.println(Drivetrain.getInstance().getRightEncoder());
 	}
 	
 	@Override
